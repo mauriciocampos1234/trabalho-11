@@ -1,0 +1,105 @@
+    /* Estilos gerais */
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 20px;
+    }
+
+    header{
+        background-color: #1210af;
+        padding: 20px;
+        text-align: left;
+        color: #fff;
+    }
+
+    
+    
+    .row {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    .col-md-6,.col-sm-6,.col-xs-12 {
+        padding: 20px;
+    }
+    
+    /* Seção Sobre a Loja */
+    .about-store {
+        background-color: #f7f7f7;
+        padding: 40px;
+    }
+    
+    .about-store img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+    }
+    
+    /* Seção Produtos */
+    .products {
+        padding: 40px;
+    }
+    
+    .product {
+        margin-bottom: 20px;
+    }
+    
+    .product img {
+        width: 100%;
+        height: 150px;
+        object-fit: cover;
+    }
+    
+    .product h3 {
+        margin-top: 10px;
+    }
+    
+    .product button {
+        background-color: #333;
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        font-size: 16px;
+        cursor: pointer;
+    }
+    
+    .product button:hover {
+        background-color: #444;
+    }
+    
+    /* Responsividade */
+    /* Desktop (a partir de 1024px) */
+    @media (min-width: 1024px) {
+    .col-md-6 {
+        width: 50%;
+        }
+    .col-md-3 {
+        width: 25%;
+        }
+    }
+    
+    /* Tablet (de 641px até 1023px) */
+    @media (min-width: 641px) and (max-width: 1023px) {
+    .col-sm-6 {
+        width: 50%;
+        }
+    .col-sm-12 {
+        width: 100%;
+        }
+    }
+    
+    /* Mobile (até 640px) */
+    @media (max-width: 640px) {
+    .col-xs-12 {
+        width: 100%;
+        }
+    .product {
+        margin-bottom: 40px;
+        }
+    }
